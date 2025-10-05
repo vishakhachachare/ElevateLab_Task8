@@ -39,6 +39,26 @@ Task08/ <-- Root folder
 
 ---
 
+## Setup Jenkins on EC2 (Amazon Linux)
+To install Jenkins on Amazon Linux, run the following commands:
+
+```bash
+
+sudo yum update -y
+sudo yum install java-21-amazon-corretto -y
+sudo yum install wget -y
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+  https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+sudo dnf install jenkins -y
+sudo systemctl enable --now jenkins
+```
+- This installs Jenkins and starts the service automatically.
+
+- Access Jenkins at http://13.222.187.112:8080.
+
+---
+
 ## Jenkins Build
 
 1. Start Jenkins (Docker or local)
