@@ -1,4 +1,4 @@
-# Task08: Simple Java Maven Build with Jenkins 🚀
+# Task08: Run a Simple Java Maven Build Job in Jenkins 🚀
 
 ## Objective
 Learn how to use Jenkins to build a simple Java application using Maven — your first step into CI/CD.
